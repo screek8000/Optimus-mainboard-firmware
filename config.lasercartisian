@@ -38,22 +38,22 @@ z_axis_max_speed                             300              # mm/min
 
 # Stepper module pins ( ports, and pin numbers, appending "!" to the number will invert a pin )
 alpha_step_pin                               2.0              # Pin for alpha stepper step signal
-alpha_dir_pin                                0.5!              # Pin for alpha stepper direction
+alpha_dir_pin                                0.5!             # Pin for alpha stepper direction
 alpha_en_pin                                 0.4              # Pin for alpha enable pin
-alpha_current                                1              # X stepper motor current
+alpha_current                                1                # X stepper motor current
 alpha_max_rate                               30000.0          # mm/min
 
 beta_step_pin                                2.1              # Pin for beta stepper step signal
-beta_dir_pin                                 0.11!             # Pin for beta stepper direction
+beta_dir_pin                                 0.11!            # Pin for beta stepper direction
 beta_en_pin                                  0.10             # Pin for beta enable
-beta_current                                 2              # Y stepper motor current
+beta_current                                 2                # Y stepper motor current
 beta_max_rate                                30000.0          # mm/min
 
 gamma_step_pin                               2.2              # Pin for gamma stepper step signal
-gamma_dir_pin                                0.20!             # Pin for gamma stepper direction
+gamma_dir_pin                                0.20!            # Pin for gamma stepper direction
 gamma_en_pin                                 0.19             # Pin for gamma enable
 gamma_current                                1.2              # Z stepper motor current
-gamma_max_rate                               1200.0            # mm/min
+gamma_max_rate                               1200.0           # mm/min
 
 save_g92 					true
 
@@ -184,10 +184,10 @@ switch.fan.max_pwm                           255              # set max pwm for 
 switch.laser.enable                           true            #
 switch.laser.input_on_command                 M03             #
 switch.laser.input_off_command                M05             #
-switch.laser.output_pin                       1.23            #
-switch.laser.output_type                      pwm          	  #
-switch.laser.startup_value					  0
-#switch.laser.pwm_period_ms				  	  1				  # set freq as 1kHZ
+switch.laser.output_pin                       1.23            # 
+switch.laser.output_type                      hwpwm           #
+switch.laser.startup_value                    0               #
+switch.laser.pwm_period_ms                    1               # set freq as 1kHZ for laser
 
 #Switch module for laser power (always on)
 switch.laserpower.enable                           true       #
