@@ -184,10 +184,12 @@ switch.fan.max_pwm                           255              # set max pwm for 
 switch.laser.enable                           true            #
 switch.laser.input_on_command                 M03             #
 switch.laser.input_off_command                M05             #
-switch.laser.output_pin                       1.23            # 
+switch.laser.output_pin                       1.23            # 3.3V hardware pwm capable pin
 switch.laser.output_type                      hwpwm           #
-switch.laser.startup_value                    0               #
+switch.laser.startup_state                    false           #
+switch.laser.startup_value                    0               # seems to take some time until set, default is on
 switch.laser.pwm_period_ms                    1               # set freq as 1kHZ for laser
+switch.laser.failsafe_set_to                  0               # set output pin off on halt
 
 #Switch module for laser power (always on)
 switch.laserpower.enable                           true       #
